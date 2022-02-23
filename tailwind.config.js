@@ -20,7 +20,8 @@ module.exports = {
       },
       boxShadow: {
         violet: '0px 15px 25px -5px rgba(124, 58, 237, 0.6)',
-        cyan: '0px 15px 25px -5px rgba(34, 211, 238, 0.3)'
+        cyan: '0px 15px 25px -5px rgba(34, 211, 238, 0.3)',
+        violetxl: '0px 0px 40px 5px rgba(124, 58, 237, 0.6)'
       }
     },
   },

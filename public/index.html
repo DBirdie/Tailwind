@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="./styles.css" />
     <title>Document</title>
   </head>
-  <body class="flex justify-center flex-col w-screen overflow-x-hidden bg-bgcolor text-white">
+  <body
+    class="flex justify-center flex-col w-screen overflow-x-hidden bg-bgcolor text-white"
+  >
     <main class="container mx-auto px-8 py-8 flex flex-col items-center">
       <h1
         class="text-5xl text-center font-bold mb-8 lg:mb-16 bg-gradient-to-r from-pink-500 to-violet-600 bg-clip-text text-transparent"
@@ -19,7 +21,9 @@
         conocimientos adquiridos de Tailwind a modo de practica, ademas de
         expresar una simple opinion acerca del framework.
       </p>
-      <div class="w-full flex gap-y-4 justify-center flex-row flex-wrap gap-x-4">
+      <div
+        class="w-full flex gap-y-4 justify-center flex-row flex-wrap gap-x-4"
+      >
         <button
           class="text-xl bg-gradient-to-r from-sky-500 to-purple-500 shadow-violet px-6 py-2 rounded-full"
         >
@@ -33,19 +37,148 @@
       </div>
     </main>
     <section class="container px-8 py-8 mt-28 flex flex-row flex-wrap">
-      <div class="flex flex-grow flex-col w-min">
+      <div class="flex flex-grow flex-col">
         <h2 class="text-4xl font-bold mb-8">¿Qué es Tailwind?</h2>
         <p class="text-xl mb-8">
           Tailwind es framework basado en la utilizacion de clases utiles,
-          tambien conocido como Utility First. Con el fin de evitar grandes
+          tambien conocido como utility first. Con el fin de evitar grandes
           bases de codigo CSS, mantener nuestro codigo escalable, y, a su vez
           seguir las reglas y los fundamentos de la programacion funcional, como
           lo puede ser la famosa inmutabilidad.
         </p>
       </div>
-      <div class="flex flex-grow min-w-54">
-        <img src="./Assets/img1.svg" alt="Tailwind Page" />
+      <div class="flex flex-grow">
+        <img
+          src="./Assets/img1.svg"
+          alt="Tailwind Page"
+          class="w-full shadow-violetxl"
+        />
       </div>
     </section>
+    <section class="container px-8 py-8 mt-28 flex flex-row flex-wrap">
+      <div class="flex flex-col flex-grow">
+        <h2 class="text-4xl font-bold mb-8">Utility first</h2>
+        <p>
+          Tailwind no es el primero y posiblemente tampoco el ultimo en usar
+          utility first, existen otras herramientas como el famosisimo boostrap,
+          que de igual forma, promueve el uso de clases utiles por encima de
+          codigo CSS. Sin embargo, la gran diferencia es que con Tailwind es
+          posible crear paginas complejas y personalizadas, a diferencia de
+          bootstrap, cuyos componentes resultan iguales en todos lados.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>Responsive desing</h2>
+        <p>
+          Uno de los mas grandes problemas a los que se enfrenta cualquier
+          desarrollador web, es la adaptacion a dispositivos de todos las
+          dimensiones. Tailwind provee de clases con las cuales es posible
+          aplicar media querys, como lo son sm(min-width: 640px), md(min-width:
+          768px), lg(min-width: 1024px), etc. con las cuales podemos adaptar
+          nuestras paginas a los distintos tamaños. Es importante mencionar que
+          este framework es mobile first.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>¿Inline Styles?</h2>
+        <p>
+          Una de las primeras cosas que se nos viene a la mente al escuchar de
+          Tailwind, es que no es mas que estilos en linea aplicados a elementos
+          unicos. Aunque realmente puede parecerlo, lo cierto es que posee sus
+          diferencias, como lo son el uso de pseudo-clases, pseudo-elementos y
+          media querys.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>Dark mode</h2>
+        <p>
+          El modo oscuro dejo de ser una opcion para nuestra pagina, y por el
+          contrario, se convirtio en una necesidad. Los usuarios prefieren el
+          uso de aplicaciones que se adapten a todo tipo de necesidades y
+          gustos, y por esto, Tailwind implementa una clase que funciona como un
+          pseudo-clase para aplicar estilos en caso de estar en modo oscuro, ya
+          sea por el sistema o porque el usuario asi lo eligio.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>Personalizacion</h2>
+        <p>
+          Si bien es cierto que las miles de clases que ofrece Tailwind son
+          limitadas, es posible extender las mismas para aplicarlas a nuestras
+          necesidades, desde cambios de colores, margenes, medidas, medias, y en
+          general, es posible la personalizacion de todo, lo que nos permite
+          crear interfaces totalmente personalizadas a nuestro antojo, haciendo
+          que cada pagina creada con Tailwind sea distinta y unica.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>Componentes y @apply</h2>
+        <p>
+          El uso constante de clases en nuestro codigo HTML termina haciendo que
+          el mismo a la larga de vuelva complicado de leer, es por esto que con
+          la directiva @apply es posible crear componentes personalizados
+          utilizando los mismos estilos, lo que resulta realmente util para
+          ahorrar codigo en nuestro HTML.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div>
+        <h2>Opiniones personales</h2>
+        <p>
+          Ahora bien, desde mi humilde punto de vista, y en base a mi opinion
+          personal ¿que tal me parece este framework?.
+          <br />
+          Honestamente me anime a tomar un curso del mismo debido a la gran
+          popularidad que estaba surgiendo, no habia un lugar en donde no
+          escuchara hablar del famoso Tailwind. Tenia mis dudas al principio,
+          creia que solo era un simple framework como bootstrap o materialize,
+          pero me lleve una sorpresa al ver la gran personalizacion que ofrece
+          en su uso, a pesar de ser utility first, ciertamente, quede
+          sorprendido.
+          <br />
+          Creo que tiene bastante futuro, y en lo poco que lo he usado me
+          resulto bastante rapido en la creacion de las interfaces, sin hablar
+          de que sus paletas de colores y estilos predefinidos son bastantes
+          buenos, por lo que no tuve que retocar demasiado los mismos. A su vez,
+          me parece simple de usar, siempre y cuando sepas CSS no es dificil
+          aprender Tailwind.
+          <br />
+          Sin embargo, tengo algunas quejas. Para empezar la nomenclatura me
+          parece poco intuitiva en muchos casos, por lo que depende mas de
+          memoria que intuicion, cosa que no me gusto del todo ya que se me hace
+          tedioso estar visitando la documentacion cada 5 min.
+          <br />
+          Ademas, no se si soy el unico, pero, mi visual studio se laguea con
+          frecuencia cada que uso este framework, lo he probado en 2 equipos
+          "decentes" y en ambos noto bastante retraso a la hora de incluso
+          guardar los cambios, esto sin contar que me es pesado que cada que
+          quiera hacer un cambio los estilos tenga que esperar un largo tiempo
+          antes de que termine de compilar.
+          <br />
+          En conclusion general, creo que es un framwork bastante util e
+          interesante, y una vez lo pruebas te percatas de las razones por las
+          que se esta volviendo tan popular. Me parece que merece una
+          oportunidad, sin embargo, creo que personalmente puede que lo usare
+          para alguno que otro proyecto, pero seguire prefiriendo trabajar con
+          CSS.
+        </p>
+      </div>
+    </section>
+    <section>
+      <p>Muchas gracias de todo corazon por llegar hasta aqui y leer este pequeño proyecto, ¡espero te haya gustado!</p>
+    </section>
+      <a href=""><img src="" alt=""></a>
+    </footer>
   </body>
 </html>
