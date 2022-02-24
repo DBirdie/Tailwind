@@ -10,13 +10,13 @@
   <body
     class="flex justify-center flex-col w-screen overflow-x-hidden bg-bgcolor text-white"
   >
-    <main class="container mx-auto px-8 py-8 flex flex-col items-center">
+    <main class="container mx-auto p-8 flex flex-col items-center mt-8 sm:mt-24">
       <h1
-        class="text-5xl text-center font-bold mb-8 lg:mb-16 bg-gradient-to-r from-pink-500 to-violet-600 bg-clip-text text-transparent"
+        class="sm:text-6xl md:text-7xl lg:text-9xl text-5xl text-center font-bold mb-8 lg:mb-16 bg-gradient-to-r from-pink-500 to-violet-600 bg-clip-text text-transparent"
       >
         Tailwind CSS
       </h1>
-      <p class="text-xl text-center mb-10 lg:mb-20">
+      <p class="lg:text-2xl text-xl text-center mb-10 lg:mb-20">
         Esta pagina es creada con el unico fin de poner en practica los
         conocimientos adquiridos de Tailwind a modo de practica, ademas de
         expresar una simple opinion acerca del framework.
@@ -24,22 +24,22 @@
       <div
         class="w-full flex gap-y-4 justify-center flex-row flex-wrap gap-x-4"
       >
-        <button
-          class="text-xl bg-gradient-to-r from-sky-500 to-purple-500 shadow-violet px-6 py-2 rounded-full"
+        <a href="https://github.com/DBirdie"
+          class="transition-transform transform hover:scale-105 text-xl bg-gradient-to-r from-sky-500 to-purple-500 shadow-violet px-6 py-2 rounded-full"
         >
           Mi github
-        </button>
-        <button
-          class="text-xl border-2 border-cyan-300 shadow-cyan px-6 py-2 rounded-full"
+        </a>
+        <a href="https://tailwindcss.com/"
+          class="transition-transform transform hover:scale-105 text-xl border-2 border-cyan-300 shadow-cyan px-6 py-2 rounded-full"
         >
           Tailwind
-        </button>
+        </a>
       </div>
     </main>
-    <section class="container px-8 py-8 mt-28 flex flex-row flex-wrap">
-      <div class="flex flex-grow flex-col">
-        <h2 class="text-4xl font-bold mb-8">¿Qué es Tailwind?</h2>
-        <p class="text-xl mb-8">
+    <section class="section__container flex-col lg:flex-row">
+      <div class="flex flex-grow flex-col w-full lg:w-1/2 lg:pr-8">
+        <h2 class="section__tittle bg-gradient-to-r from-violet-500 to-blue-500 lg:w-max bg-clip-text text-transparent">¿Qué es Tailwind?</h2>
+        <p class="section__text">
           Tailwind es framework basado en la utilizacion de clases utiles,
           tambien conocido como utility first. Con el fin de evitar grandes
           bases de codigo CSS, mantener nuestro codigo escalable, y, a su vez
@@ -47,18 +47,18 @@
           lo puede ser la famosa inmutabilidad.
         </p>
       </div>
-      <div class="flex flex-grow">
+      <div class="flex flex-grow w-full lg:w-1/2">
         <img
           src="./Assets/img1.svg"
           alt="Tailwind Page"
-          class="w-full shadow-violetxl"
+          class="w-full shadow-violetxl rounded-lg object-cover"
         />
       </div>
     </section>
-    <section class="container px-8 py-8 mt-28 flex flex-row flex-wrap">
-      <div class="flex flex-col flex-grow">
-        <h2 class="text-4xl font-bold mb-8">Utility first</h2>
-        <p>
+    <section class="section__container flex-col lg:flex-row-reverse">
+      <div class="flex flex-col flex-grow w-full lg:w-1/2 lg:pl-8">
+        <h2 class="section__tittle bg-gradient-to-r from-cyan-500 to-blue-500 lg:w-max bg-clip-text text-transparent">Utility first</h2>
+        <p class="section__text">
           Tailwind no es el primero y posiblemente tampoco el ultimo en usar
           utility first, existen otras herramientas como el famosisimo boostrap,
           que de igual forma, promueve el uso de clases utiles por encima de
@@ -66,12 +66,15 @@
           posible crear paginas complejas y personalizadas, a diferencia de
           bootstrap, cuyos componentes resultan iguales en todos lados.
         </p>
+      </div>  
+      <div class="flex flex-grow w-full lg:w-1/3">
+        <img src="./Assets/img2.png" alt="Utility first" class="object-cover w-full shadow-cyanxl rounded-lg">
       </div>
     </section>
-    <section>
-      <div>
-        <h2>Responsive desing</h2>
-        <p>
+    <section class="section__container flex-col justify-center">
+      <div class="md:mb-8">
+        <h2 class="section__tittle lg:text-center bg-gradient-to-r from-blue-500 to-fuchsia-500 lg:w-max lg:mx-auto bg-clip-text text-transparent">Responsive desing</h2>
+        <p class="section__text lg:text-center">
           Uno de los mas grandes problemas a los que se enfrenta cualquier
           desarrollador web, es la adaptacion a dispositivos de todos las
           dimensiones. Tailwind provee de clases con las cuales es posible
@@ -81,11 +84,31 @@
           este framework es mobile first.
         </p>
       </div>
+      <div class="container flex flex-wrap flex-row justify-between gap-4 lg:gap-16">
+        <div class="shadow-indigoxl flex flex-row lg:flex-col lg:text-3xl lg:h-56 gap-x-2 items-center py-2 px-4 flex-grow justify-center bg-indigo-300 text-indigo-600 rounded-lg font-semibold text-xl">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 lg:h-12 lg:w-12 lg:mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+          </svg>
+          <span>Tablet</span>
+        </div>
+        <div class="shadow-bluexl flex flex-row lg:h-56 lg:flex-col lg:text-3xl gap-x-2 items-center py-2 px-4 flex-grow justify-center bg-blue-300 text-blue-600 rounded-lg font-semibold text-xl">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 lg:h-12 lg:w-12 lg:mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          <span>Dekstop</span>          
+        </div>
+        <div class="shadow-fuchsiaxl flex flex-row lg:h-56 lg:flex-col lg:text-3xl gap-x-2 items-center py-2 px-4 flex-grow justify-center bg-fuchsia-300 text-fuchsia-600 rounded-lg font-semibold text-xl">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 lg:h-12 lg:w-12 lg:mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+          </svg>
+          <span>Mobile</span>
+        </div>
+      </div>
     </section>
-    <section>
-      <div>
-        <h2>¿Inline Styles?</h2>
-        <p>
+    <section class="section__container flex-col">
+      <div class="md:mb-8">
+        <h2 class="section__tittle lg:text-center lg:mx-auto lg:w-max bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">¿Inline Styles?</h2>
+        <p class="section__text lg:text-center">
           Una de las primeras cosas que se nos viene a la mente al escuchar de
           Tailwind, es que no es mas que estilos en linea aplicados a elementos
           unicos. Aunque realmente puede parecerlo, lo cierto es que posee sus
@@ -93,11 +116,15 @@
           media querys.
         </p>
       </div>
+      <div class="flex flex-wrap w-full gap-4 lg:px-28">
+        <input class="shadow-fuchsiaxl lg:w-3/4 flex-grow rounded-full text-lg py-2 px-4 bg-transparent outline-none border-2 border-solid border-transparent focus:border-fuchsia-500 transition-all caret-fuchsia-400" type="text" placeholder="Focus">
+        <button class="flex-grow shadow-skyxl bg-sky-300 text-sky-600 px-8 py-2 rounded-full text-lg font-semibold transform hover:scale-105 transition-transform">Hover</button>
+      </div>
     </section>
-    <section>
-      <div>
-        <h2>Dark mode</h2>
-        <p>
+    <section class="section__container">
+      <div class="md:mb-8">
+        <h2 class="section__tittle lg:text-center lg:mx-auto lg:w-max bg-gradient-to-r from-violet-300 to-sky-700 bg-clip-text text-transparent">Dark mode</h2>
+        <p class="section__text lg:text-center">
           El modo oscuro dejo de ser una opcion para nuestra pagina, y por el
           contrario, se convirtio en una necesidad. Los usuarios prefieren el
           uso de aplicaciones que se adapten a todo tipo de necesidades y
@@ -106,11 +133,15 @@
           sea por el sistema o porque el usuario asi lo eligio.
         </p>
       </div>
+      <div class="flex flex-row flex-wrap gap-8 justify-around items-center w-full">
+        <img src="./Assets/img3.png" alt="cheapc dark" class="shadow-violetxl rounded-xl">
+        <img src="./Assets/img4.png" alt="cheapc white" class="shadow-skyxl rounded-xl">
+      </div>
     </section>
-    <section>
-      <div>
-        <h2>Personalizacion</h2>
-        <p>
+    <section class="justify-between section__container flex-col lg:flex-row-reverse">
+      <div class="w-full lg:w-1/2 lg:pl-8">
+        <h2 class="section__tittle lg:w-max bg-gradient-to-r from-pink-500 to-yellow-500 bg-clip-text text-transparent">Personalizacion</h2>
+        <p class="section__text">
           Si bien es cierto que las miles de clases que ofrece Tailwind son
           limitadas, es posible extender las mismas para aplicarlas a nuestras
           necesidades, desde cambios de colores, margenes, medidas, medias, y en
@@ -119,23 +150,29 @@
           que cada pagina creada con Tailwind sea distinta y unica.
         </p>
       </div>
+      <div class="w-full lg:w-1/3 flex transform lg:scale-125 lg:ml-16">
+        <img src="./Assets/img5.png" alt="paginas con tailwind" class="filter drop-shadow-3xl">
+      </div>
     </section>
-    <section>
-      <div>
-        <h2>Componentes y @apply</h2>
-        <p>
+    <section class="section__container flex-col justify-between lg:flex-row">
+      <div class="w-full lg:w-1/2 flex justify-center flex-col">
+        <h2 class="section__tittle lg:w-max bg-gradient-to-r from-blue-600 to-cyan-400 bg-clip-text text-transparent ">Componentes y @apply</h2>
+        <p class="section__text">
           El uso constante de clases en nuestro codigo HTML termina haciendo que
-          el mismo a la larga de vuelva complicado de leer, es por esto que con
+          el mismo a la larga se vuelva complicado de leer, es por esto que con
           la directiva @apply es posible crear componentes personalizados
           utilizando los mismos estilos, lo que resulta realmente util para
           ahorrar codigo en nuestro HTML.
         </p>
       </div>
+      <div class="flex w-full lg:w-1/3 justify-end">
+        <img src="./Assets/img6.png" alt="apply" class="mx-auto filter drop-shadow-3xlteal">
+      </div>
     </section>
-    <section>
+    <section class="section__container">
       <div>
-        <h2>Opiniones personales</h2>
-        <p>
+        <h2 class="section__tittle lg:w-max bg-gradient-to-r from-rose-500 to-indigo-400 bg-clip-text text-transparent">Opiniones personales</h2>
+        <p class="section__text filter drop-shadow-3xl">
           Ahora bien, desde mi humilde punto de vista, y en base a mi opinion
           personal ¿que tal me parece este framework?.
           <br />
@@ -163,22 +200,22 @@
           frecuencia cada que uso este framework, lo he probado en 2 equipos
           "decentes" y en ambos noto bastante retraso a la hora de incluso
           guardar los cambios, esto sin contar que me es pesado que cada que
-          quiera hacer un cambio los estilos tenga que esperar un largo tiempo
-          antes de que termine de compilar.
+          quiera hacer un cambio en los estilos, tenga que esperar un largo
+          tiempo antes de que termine de compilar.
           <br />
           En conclusion general, creo que es un framwork bastante util e
           interesante, y una vez lo pruebas te percatas de las razones por las
           que se esta volviendo tan popular. Me parece que merece una
-          oportunidad, sin embargo, creo que personalmente puede que lo usare
-          para alguno que otro proyecto, pero seguire prefiriendo trabajar con
-          CSS.
+          oportunidad, sin embargo, creo que personalmente lo usare para alguno
+          que otro proyecto, pero seguire prefiriendo trabajar con CSS.
         </p>
       </div>
     </section>
-    <section>
-      <p>Muchas gracias de todo corazon por llegar hasta aqui y leer este pequeño proyecto, ¡espero te haya gustado!</p>
+    <section class="section__container">
+      <p class="font-bold text-2xl bg-gradient-to-r from-pink-500 via-fuchsia-500 to-yellow-400 text-center bg-clip-text text-transparent">
+        Muchas gracias de todo corazon por llegar hasta aqui y leer este pequeño
+        proyecto, ¡espero te haya gustado!
+      </p>
     </section>
-      <a href=""><img src="" alt=""></a>
-    </footer>
   </body>
 </html>

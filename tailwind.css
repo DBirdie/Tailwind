@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .section__container {
+    @apply 
+    container 
+    mx-auto 
+    p-8 
+    mt-28
+    lg:mt-56 
+    flex 
+    flex-wrap;
+  }
+
+  .section__tittle {
+    @apply 
+    text-4xl 
+    font-bold 
+    mb-8 
+    break-all;
+  }
+
+  .section__text {
+    @apply 
+    text-lg 
+    lg:text-xl
+    mb-8;
+  }
+}
